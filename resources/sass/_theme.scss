@@ -1,0 +1,174 @@
+body {
+  &.dark {
+    #app {
+      background: $text-default;
+    }
+
+    .navbar {
+      background: $text-default;
+      border-bottom-color: $color-text-white;
+
+      &__links {
+        a {
+          color: $color-text-white;
+
+          &:focus,
+          &:hover {
+            color: $blue;
+          }
+        }
+
+        &--theme-switch {
+          color: $color-text-white;
+        }
+      }
+    }
+
+    .full-name {
+      &__first,
+      &__last {
+        color: $color-text-white;
+      }
+    }
+
+    .home-page {
+      &__headlines {
+        color: $color-text-white;
+
+        .dot {
+          background: $color-text-white;
+        }
+      }
+
+      &__main-image {
+        background-image: url("https://res.cloudinary.com/sdee3-com/image/upload/e_brightness:-40,q_50/v1517944659/pic1-min_ooyfuv.jpg");
+      }
+
+      &__blog-section {
+        * {
+          color: $color-text-white;
+        }
+
+        .button {
+          color: $text-default;
+        }
+      }
+    }
+
+    .footer {
+      background: $text-default;
+      border-top: 5px solid $color-text-white;
+      color: $color-text-white;
+
+      &__content {
+        .links,
+        .social,
+        .contact-info {
+          ul {
+            li {
+              color: $color-text-white;
+
+              a {
+                color: $color-text-white;
+                text-decoration: none;
+
+                &:focus,
+                &:hover {
+                  color: $color-text-white;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .blog-page {
+      &__top-heading {
+        h1 {
+          color: $color-text-white;
+        }
+      }
+
+      .blog-post {
+        &__card {
+          background: $color-text-white;
+          border: unset;
+        }
+
+        &__title,
+        &__text {
+          color: $color-text-white;
+        }
+      }
+
+      &__login-form {
+        h1,
+        h2 {
+          color: $color-text-white;
+        }
+
+        input {
+          background: transparent;
+
+          &::placeholder {
+            color: $border-grey;
+          }
+        }
+
+        .button {
+          color: $color-text-white;
+        }
+      }
+
+      &__add-article,
+      &__edit-article {
+        * {
+          color: $color-text-white;
+        }
+
+        input {
+          background: transparent;
+
+          &::placeholder {
+            color: $border-grey;
+          }
+        }
+
+        .button {
+          background: transparent;
+          border: 1px solid $color-text-white;
+        }
+
+        .input-group-prepend__pre-input-text {
+          color: $text-default;
+        }
+      }
+    }
+
+    .contact-page {
+      h1 {
+        color: $color-text-white;
+      }
+
+      form {
+        input,
+        textarea {
+          background: transparent;
+          border: 1px solid $color-text-white;
+          color: $color-text-white;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .breadcrumb {
+      background: $blue;
+      color: $color-text-white;
+    }
+  }
+}

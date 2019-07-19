@@ -1,0 +1,13 @@
+.full-name {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  &__first {
+    color: $text-default;
+  }
+
+  &__last {
+    color: $black;
+    font-weight: bold;
+  }
+}
