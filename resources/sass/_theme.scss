@@ -93,13 +93,19 @@ body {
 
       .blog-post {
         &__card {
-          background: $color-text-white;
+          background: transparent;
           border: unset;
         }
 
         &__title,
+        &__caption,
         &__text {
           color: $color-text-white;
+
+          a {
+            color: $white;
+            font-weight: bold;
+          }
         }
       }
 

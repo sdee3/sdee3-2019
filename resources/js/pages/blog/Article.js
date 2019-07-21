@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { isAuthenticated, validateCookie } from '../../Helpers';
 
 const Breadcrumbs = lazy(() => import('../../components/Breadcrumbs'));
@@ -34,6 +35,24 @@ export default function Article({ match }) {
 
 	return article ? (
 		<>
+			<Helmet>
+				<title>{`${article.title} | Blog`}</title>
+				<meta name="description" content={article.caption} />
+
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={`https://sdee3.com/blog/${match.params.slug}`} />
+				<meta property="og:title" content={article.title} />
+				<meta property="og:description" content={article.caption} />
+				<meta property="og:image" content={article.cover_url} />
+				
+				{/* Twitter */}
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content={`https://sdee3.com/blog/${match.params.slug}`} />
+				<meta property="twitter:title" content={article.title} />
+				<meta property="twitter:description" content={article.caption} />
+				<meta property="twitter:image" content={article.cover_url} />
+			</Helmet>
 			<Breadcrumbs
 				page={
 					<>
