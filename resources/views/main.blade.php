@@ -13,6 +13,18 @@
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
   <title>Stefan Djokic | Portfolio</title>
+
+  @if (env('APP_ENV') === 'production')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112027701-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-112027701-1');
+  </script>
+  @endif
 </head>
 
 <body>
