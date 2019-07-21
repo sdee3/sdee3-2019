@@ -115,11 +115,15 @@ body {
           color: $color-text-white;
         }
 
-        input {
-          background: transparent;
+        /* Auth. form inputs */
+        form {
+          input {
+            background: transparent;
+            color: $color-text-white;
 
-          &::placeholder {
-            color: $border-grey;
+            &::placeholder {
+              color: $border-grey;
+            }
           }
         }
 

@@ -88,7 +88,7 @@ export default function Edit({ match }) {
 	};
 
 	return Object.keys(article).length && isAuthenticated() ? (
-		<section className="blog-page">
+		<section className="blog-page blog-page__edit-article">
 			<div className="container">
 				<Link to={`/blog/${article.slug}`}>
 					<button className="button">Go Back</button>
