@@ -23,8 +23,6 @@ export default function Navbar() {
 				</section>
 				<section className="navbar__links">
 					<ThemeSwitcher />
-					<Link to="/services">Services</Link>
-					<Link to="/packages">Packages</Link>
 					<Link to="/blog">Blog</Link>
 					<Link to="/contact">Contact</Link>
 				</section>
